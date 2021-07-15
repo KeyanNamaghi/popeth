@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import Draggable from 'react-draggable'
 import { useSelector } from 'react-redux'
 import { ResizableBox } from 'react-resizable'
-import { Route, Switch, useLocation } from 'react-router'
+import { Route, Switch } from 'react-router'
 import { getFullscreenState } from '../../selectors/window'
 import { Header } from '../header/Header'
 import './Window.css'
 
 export const Window = () => {
-  const { pathname } = useLocation()
   const fullscreen = useSelector(getFullscreenState)
   const [dragging, setDragging] = useState(false)
   const [resizing, setResizing] = useState(false)
