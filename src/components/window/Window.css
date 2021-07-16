@@ -55,6 +55,7 @@
   margin: 8px 0px 7px 6px;
   border-radius: 50%;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .window__header-body {
