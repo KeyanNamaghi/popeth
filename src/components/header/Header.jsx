@@ -10,9 +10,9 @@ export const Header = ({ className }) => {
 
   return (
     <div className={`window__header ${className}`}>
-      <span className="header__icon header__icon--red" onClick={handleMinimise}></span>
-      <span className="header__icon header__icon--amber" onClick={handleMinimise}></span>
-      <span className="header__icon header__icon--green" onClick={handleFullscreen}></span>
+      <button className="header__icon header__icon--red" onClick={handleMinimise}></button>
+      <button className="header__icon header__icon--amber" onClick={handleMinimise}></button>
+      <button className="header__icon header__icon--green" onClick={handleFullscreen}></button>
       <div className="window__header-body" onDoubleClick={handleFullscreen} />
       <h1 className="header__heading">Heading</h1>
     </div>

@@ -33,10 +33,7 @@ const store = configureStore(/* provide initial state if any */)
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Switch>
-        {/* <Route exact path="/" render={() => <div>Match</div>} /> */}
-        <Route render={() => <App />} />
-      </Switch>
+      <App />
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')

@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import Draggable from 'react-draggable'
 import { useSelector } from 'react-redux'
 import { ResizableBox } from 'react-resizable'
 import { Route, Switch } from 'react-router'
-import { getFullscreenState } from '../../selectors/window'
+import { getFullscreenState, getShowState } from '../../selectors/window'
 import { Header } from '../header/Header'
 import './Window.css'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
+  const show = useSelector(getShowState)
   const [dragging, setDragging] = useState(false)
   const [resizing, setResizing] = useState(false)
   const [posX, setPosX] = useState(0.5 * (window.innerWidth - 0.75 * window.innerWidth))
-  const [posY, setPosY] = useState(0.5 * (window.innerHeight - 0.75 * window.innerHeight))
+  const [posY, setPosY] = useState(0.5 * (window.innerHeight - 0.75 * window.innerHeight) - 50)
   const [sizeX, setSizeX] = useState(fullscreen ? window.innerWidth - 4 : 0.75 * window.innerWidth)
   const [sizeY, setSizeY] = useState(fullscreen ? window.innerHeight - 34 : 0.75 * window.innerHeight)
 
@@ -29,6 +31,8 @@ export const Window = () => {
     setSizeX(data.size.width)
     setSizeY(data.size.height)
   }
+
+  if (!show) return null
 
   return (
     <Draggable
@@ -54,6 +58,10 @@ export const Window = () => {
           <div className={`window__body`}>
             <Switch>
               <Route path="/help" render={() => <div>Help</div>}></Route>
+              <Route path="/me" render={() => <div>me</div>}></Route>
+              <Route path="/projects" render={() => <div>projects</div>}></Route>
+              <Route path="/experience" render={() => <div>experience</div>}></Route>
+              <Route path="/contact" render={() => <div>contact</div>}></Route>
               <Route path="/" render={() => <div>Match</div>}></Route>
             </Switch>
           </div>

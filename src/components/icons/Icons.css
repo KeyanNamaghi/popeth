@@ -1,0 +1,51 @@
+.icon__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.icon__image {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background: deeppink;
+  margin-bottom: 5px;
+}
+
+.icon__name {
+  font-size: small;
+}
+
+.icon {
+  width: 75px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .icon__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 15vw;
+    margin-bottom: 0px;
+  }
+
+  .icon__image {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .icon__name {
+    font-size: x-small;
+  }
+}

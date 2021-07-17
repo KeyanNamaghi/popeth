@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { CLOSE_WINDOW, SET_FULLSCREEN_WINDOW, TOGGLE_FULLSCREEN_WINDOW } from '../actions'
+import { CLOSE_WINDOW, SET_FULLSCREEN_WINDOW, SHOW_WINDOW, TOGGLE_FULLSCREEN_WINDOW } from '../actions'
 
 const initialState = { fullscreen: false, show: true }
 
@@ -12,6 +12,9 @@ const window = createReducer(initialState, {
   },
   [CLOSE_WINDOW.type]: (state) => {
     state.show = false
+  },
+  [SHOW_WINDOW.type]: (state) => {
+    state.show = true
   }
 })
 
