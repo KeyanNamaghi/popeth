@@ -8,7 +8,6 @@ import { applyMiddleware, createStore } from 'redux'
 import { routerMiddleware } from 'connected-react-router'
 import createRootReducer from './reducers/root'
 import { Provider } from 'react-redux'
-import { Route, Switch } from 'react-router' // react-router v4/v5
 import { ConnectedRouter } from 'connected-react-router'
 import { composeWithDevTools } from 'redux-devtools-extension'
 

@@ -42,10 +42,17 @@
 .window__body {
   border-top: 2px solid black;
   padding: 10px;
+  overflow: auto;
+  height: calc(100% - 22px);
 }
 
 .window__resizable--auto {
   transition: width 0.5s ease 0s, height 0.5s ease 0s;
+}
+
+.window__header-body {
+  flex: auto;
+  z-index: 1;
 }
 
 .header__icon {
@@ -57,11 +64,7 @@
   border-radius: 50%;
   box-sizing: border-box;
   z-index: 1;
-}
-
-.window__header-body {
-  flex: auto;
-  z-index: 1;
+  cursor: pointer;
 }
 
 .header__icon--red:hover {

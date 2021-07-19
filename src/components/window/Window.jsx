@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { useEffect } from 'react'
 import Draggable from 'react-draggable'
 import { useSelector } from 'react-redux'
 import { ResizableBox } from 'react-resizable'
 import { Route, Switch } from 'react-router'
 import { getFullscreenState, getShowState } from '../../selectors/window'
 import { Header } from '../header/Header'
+import { Projects } from '../projects/Projects'
 import './Window.css'
 
 export const Window = () => {
@@ -59,7 +59,7 @@ export const Window = () => {
             <Switch>
               <Route path="/help" render={() => <div>Help</div>}></Route>
               <Route path="/me" render={() => <div>me</div>}></Route>
-              <Route path="/projects" render={() => <div>projects</div>}></Route>
+              <Route path="/projects" render={Projects}></Route>
               <Route path="/experience" render={() => <div>experience</div>}></Route>
               <Route path="/contact" render={() => <div>contact</div>}></Route>
               <Route path="/" render={() => <div>Match</div>}></Route>
