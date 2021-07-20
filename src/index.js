@@ -5,10 +5,9 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { createBrowserHistory } from 'history'
 import { applyMiddleware, createStore } from 'redux'
-import { routerMiddleware } from 'connected-react-router'
+import { ConnectedRouter, routerMiddleware } from 'connected-react-router'
 import createRootReducer from './reducers/root'
 import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'connected-react-router'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 const history = createBrowserHistory()
