@@ -14,6 +14,8 @@ export const Header = ({ className }) => {
     '/me': 'Keyan Namaghi',
     '/projects': 'Projects',
     '/projects/tinder++': 'Tinder++',
+    '/projects/popeth': 'Popeth [This Site]',
+    '/projects/vowels': 'Where Are All The Vowels?',
     '/experience': 'Experience',
     '/contact': 'Contact Me'
   }[pathname]
