@@ -6,7 +6,10 @@ import { Route, Switch } from 'react-router-dom'
 import { getFullscreenState, getShowState } from '../../selectors/window'
 import { Header } from '../header/Header'
 import { Projects } from '../projects/Projects'
+import { Tinder } from '../projects/projectPages/Tinder'
 import './Window.css'
+import { Popeth } from '../projects/projectPages/Popeth'
+import { Vowels } from '../projects/projectPages/Vowels'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -59,8 +62,14 @@ export const Window = () => {
             <Switch>
               <Route path="/help" render={() => <div>Help</div>}></Route>
               <Route path="/me" render={() => <div>me</div>}></Route>
-              <Route path="/projects/bus">
-                <Header />
+              <Route path="/projects/tinder++">
+                <Tinder />
+              </Route>
+              <Route path="/projects/popeth">
+                <Popeth />
+              </Route>
+              <Route path="/projects/vowels">
+                <Vowels />
               </Route>
               <Route path="/projects">
                 <Projects />

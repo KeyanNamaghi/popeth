@@ -13,6 +13,7 @@ export const Header = ({ className }) => {
   const heading = {
     '/me': 'Keyan Namaghi',
     '/projects': 'Projects',
+    '/projects/tinder++': 'Tinder++',
     '/experience': 'Experience',
     '/contact': 'Contact Me'
   }[pathname]
