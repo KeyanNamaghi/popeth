@@ -37,3 +37,31 @@
 .projects__card-description {
   font-size: small;
 }
+
+.vowels__body {
+  padding: 10px;
+}
+
+.vowels__alphabet {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30px);
+  grid-auto-rows: 30px;
+  grid-gap: 0px;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.vowels__letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightcyan;
+}
+
+.vowels__letter--vowel {
+  background: lightskyblue;
+}
+
+.vowels__letter--y {
+  background: lightblue;
+}
