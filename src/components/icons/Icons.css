@@ -9,16 +9,9 @@
   width: 75px;
   height: 75px;
   border-radius: 10px;
-  background: deeppink;
-  margin-bottom: 5px;
-}
-
-.icon__image--me {
-  background: white;
-  width: 75px;
-  height: 75px;
   border: solid 2px black;
-  border-radius: 10px;
+  background: white;
+  margin-bottom: 5px;
 }
 
 .icon__name {
