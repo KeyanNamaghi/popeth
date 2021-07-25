@@ -16,7 +16,9 @@ export const Icons = () => {
   return (
     <div className="icon__container">
       <div className="icon" onClick={() => handleClick('/me')}>
-        <div className="icon__image"></div>
+        <div className="icon__image">
+          <img className="icon__image--me" src="/me.svg" alt="" />
+        </div>
         <span className="icon__name">Me</span>
       </div>
       <div className="icon" onClick={() => handleClick('/projects')}>
