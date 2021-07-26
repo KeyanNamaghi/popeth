@@ -7,10 +7,11 @@ import { getFullscreenState, getShowState } from '../../selectors/window'
 import { Header } from '../header/Header'
 import { Projects } from '../projects/Projects'
 import { Tinder } from '../projects/projectPages/Tinder'
-import './Window.css'
 import { Popeth } from '../projects/projectPages/Popeth'
 import { Vowels } from '../projects/projectPages/Vowels'
 import { Experience } from '../experience/Experience'
+import { Me } from '../me/Me'
+import './Window.css'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -62,7 +63,9 @@ export const Window = () => {
           <div className={`window__body`}>
             <Switch>
               <Route path="/help" render={() => <div>Help</div>}></Route>
-              <Route path="/me" render={() => <div>me</div>}></Route>
+              <Route path="/me">
+                <Me />
+              </Route>
               <Route path="/projects/tinder++">
                 <Tinder />
               </Route>
@@ -75,7 +78,9 @@ export const Window = () => {
               <Route path="/projects">
                 <Projects />
               </Route>
-              <Route path="/experience" render={() => <Experience />}></Route>
+              <Route path="/experience">
+                <Experience />
+              </Route>
               <Route path="/contact" render={() => <div>contact</div>}></Route>
               <Route path="/" render={() => <div>Match</div>}></Route>
             </Switch>
