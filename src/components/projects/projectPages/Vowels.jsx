@@ -20,9 +20,9 @@ export const Vowels = () => {
   return (
     <>
       <Back />
-      <TLDR link={link} />
+      <TLDR link={link} image={vowelsImage} />
       <div className="vowels__body">
-        <h2>Why doesn't welsh have any vowels?</h2>
+        <h2>Why does welsh have so few vowels?</h2>
         <p>
           This is one of the most annoying quips about the welsh language and it's shocking how prevelent something so
           far from the truth is. Despite being an official language of the United Kingdom, outside of Wales very little
@@ -45,7 +45,6 @@ export const Vowels = () => {
           actually being vowels. This inspired me to made a silly little website that uses the google translates api to
           show where the vowels are in words in both english and welsh.
         </p>
-        <img src={vowelsImage} alt="screenshot of website" width="280px" />
       </div>
     </>
   )

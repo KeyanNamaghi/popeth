@@ -1,9 +1,10 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 import { SHOW_WINDOW } from '../../actions'
 
 import me from '../../assets/me.svg'
+import meLooking from '../../assets/meLooking.svg'
 import projects from '../../assets/projects.svg'
 import experience from '../../assets/experience.svg'
 import contact from '../../assets/contact.svg'
@@ -12,6 +13,7 @@ import './Icons.css'
 
 export const Icons = () => {
   const history = useHistory()
+  const location = useLocation()
   const dispatch = useDispatch()
 
   const handleClick = (page) => {
@@ -22,7 +24,7 @@ export const Icons = () => {
   return (
     <div className="icon__container">
       <div className="icon" onClick={() => handleClick('/me')}>
-        <img className="icon__image" src={me} alt="" />
+        <img className="icon__image" src={location.pathname === '/me' ? meLooking : me} alt="" />
         <span className="icon__name">Me</span>
       </div>
       <div className="icon" onClick={() => handleClick('/projects')}>
