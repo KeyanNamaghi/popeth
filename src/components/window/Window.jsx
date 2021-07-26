@@ -10,6 +10,7 @@ import { Tinder } from '../projects/projectPages/Tinder'
 import './Window.css'
 import { Popeth } from '../projects/projectPages/Popeth'
 import { Vowels } from '../projects/projectPages/Vowels'
+import { Experience } from '../experience/Experience'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -74,7 +75,7 @@ export const Window = () => {
               <Route path="/projects">
                 <Projects />
               </Route>
-              <Route path="/experience" render={() => <div>experience</div>}></Route>
+              <Route path="/experience" render={() => <Experience />}></Route>
               <Route path="/contact" render={() => <div>contact</div>}></Route>
               <Route path="/" render={() => <div>Match</div>}></Route>
             </Switch>

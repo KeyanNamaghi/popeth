@@ -1,0 +1,22 @@
+.experience__container {
+  /* background: lightgray; */
+  margin: 50px 0px;
+}
+
+.experience__timeline::before {
+  background: rgb(0, 50, 90);
+}
+
+.experience__list {
+  font-size: small;
+  margin-top: 10px;
+}
+
+.experience__list > ul {
+  padding-inline-start: 10px;
+  margin-block-end: 0px;
+}
+
+.experience__list > ul > li {
+  margin-top: 10px;
+}
