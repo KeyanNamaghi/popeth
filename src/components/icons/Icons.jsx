@@ -35,10 +35,10 @@ export const Icons = () => {
         <img className="icon__image" src={experience} alt="" />
         <span className="icon__name">Experience</span>
       </div>
-      <div className="icon" onClick={() => handleClick('/contact')}>
+      {/* <div className="icon" onClick={() => handleClick('/contact')}>
         <img className="icon__image" src={contact} alt="" />
         <span className="icon__name">Contact</span>
-      </div>
+      </div> */}
     </div>
   )
 }
