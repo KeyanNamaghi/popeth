@@ -7,7 +7,7 @@ import me from '../../assets/me.svg'
 import meLooking from '../../assets/meLooking.svg'
 import projects from '../../assets/projects.svg'
 import experience from '../../assets/experience.svg'
-import contact from '../../assets/contact.svg'
+// import contact from '../../assets/contact.svg'
 
 import './Icons.css'
 
