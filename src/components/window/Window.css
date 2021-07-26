@@ -40,6 +40,8 @@
 }
 
 .window__body {
+  display: flex;
+  flex-direction: column;
   border-top: 2px solid black;
   padding: 10px;
   overflow: auto;
