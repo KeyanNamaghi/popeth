@@ -8,6 +8,7 @@ import meLooking from '../../assets/meLooking.svg'
 import projects from '../../assets/projects.svg'
 import experience from '../../assets/experience.svg'
 // import contact from '../../assets/contact.svg'
+import settings from '../../assets/settings.svg'
 
 import './Icons.css'
 
@@ -34,6 +35,10 @@ export const Icons = () => {
       <div className="icon" onClick={() => handleClick('/experience')}>
         <img className="icon__image" src={experience} alt="" />
         <span className="icon__name">Experience</span>
+      </div>
+      <div className="icon" onClick={() => handleClick('/settings')}>
+        <img className="icon__image" src={settings} alt="" />
+        <span className="icon__name">Settings</span>
       </div>
       {/* <div className="icon" onClick={() => handleClick('/contact')}>
         <img className="icon__image" src={contact} alt="" />

@@ -12,6 +12,7 @@ import { Vowels } from '../projects/projectPages/Vowels'
 import { Experience } from '../experience/Experience'
 import { Me } from '../me/Me'
 import './Window.css'
+import { Settings } from '../settings/Settings'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -80,6 +81,9 @@ export const Window = () => {
               </Route>
               <Route path="/experience">
                 <Experience />
+              </Route>
+              <Route path="/settings">
+                <Settings />
               </Route>
               <Route path="/contact" render={() => <div>contact</div>}></Route>
               <Route path="/">
