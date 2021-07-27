@@ -34,6 +34,31 @@ const descriptions = {
       <li>Contributed to the Argos shared component library with a brand new progress bar component.</li>
       <li>Intoduced the use of Cypress testing and Storybook.</li>
     </ul>
+  ),
+  Imperial: (
+    <ul>
+      <li>
+        Final Year Individual Project – Virtual Reality Graph Visualisation
+        <ul>
+          <li>Explored using an Oculus Rift to visualise and interact with graphs composed of vertices and edges.</li>
+          <li>
+            Built a working application in Unity (C#) that was able to demonstrate the concept by utilising a modern
+            efficient force directed layout algorithm.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Third Year University Group Project – Climate Edge Application and Sensor
+        <ul>
+          <li>
+            Developed an Android application to log and plot graphically data from a microprocessor sent via Bluetooth.
+          </li>
+          <li>
+            Designed and manufactured a new rain sensor and began training a model via matlab to calculate rainfall
+          </li>
+        </ul>
+      </li>
+    </ul>
   )
 }
 
@@ -68,6 +93,13 @@ export const Experience = () => (
         date="Sep 2019 – May 2020"
         description={descriptions.PDP}
         colour="#D42114"
+      />
+      <TimelineElement
+        title="Imperial College London"
+        subtitle="Electrical and Electronic Engineering MEng (2:1)"
+        date="Sep 2013 - Oct 2018"
+        description={descriptions.Imperial}
+        colour="#012146"
       />
     </VerticalTimeline>
   </div>
