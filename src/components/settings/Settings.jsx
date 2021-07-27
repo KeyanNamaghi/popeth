@@ -4,13 +4,23 @@ import { SET_BACKGROUND } from '../../actions'
 import { getBackground } from '../../selectors/desktop'
 import './Settings.css'
 
+// TODO: refactor this into two separate things, I blame the vaccine side effects for this mess
 const Background = ({ background, grid }) => {
   const dispatch = useDispatch()
   const activeBackground = useSelector(getBackground)
+  let active = ''
+
+  if (background === activeBackground.backgroundColor) {
+    active = ' settings__card--selected'
+  }
+
+  if (grid && grid === activeBackground.backgroundSize) {
+    active = ' settings__card--selected'
+  }
 
   return (
     <div
-      className="settings__card"
+      className={'settings__card' + active}
       style={{
         backgroundColor: background || activeBackground.backgroundColor,
         backgroundSize: grid || '0px 0px',
@@ -46,7 +56,7 @@ export const Settings = () => {
       </div>
       <h3>Background Grid</h3>
       <div className="settings__body">
-        <Background />
+        <Background grid={'0px 0px'} />
         <Background grid={'20px 20px'} />
         <Background grid={'40px 40px'} />
         <Background grid={'80px 80px'} />

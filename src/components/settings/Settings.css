@@ -13,7 +13,6 @@
   transition: 0.3s;
 }
 
-.settings__card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background: #defde0;
+.settings__card--selected {
+  box-shadow: 0 8px 16px 0 #0000006b;
 }
