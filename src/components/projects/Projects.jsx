@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import tinderImage from '../../assets/tinderplusplus.png'
 import popethImage from '../../assets/popeth.png'
 import vowelsImage2 from '../../assets/vowels2.png'
+import pokedexImage from '../../assets/pokedex.png'
 import placeholderImage from '../../assets/placeholder.png'
 import './Projects.css'
 
@@ -25,6 +26,7 @@ export const Projects = () => {
   const tinderDescription = "What's the worst part of tinder? The rejection and the people."
   const popethDescription = 'This website was created as a portfolio for everything I do.'
   const vowelsDescription = 'Why welsh has more vowels than you might imagine.'
+  const pokedexDescription = 'Just a silly little pokédex for that nostalgia hit.'
 
   const handleClick = (page) => {
     history.push(page)
@@ -50,7 +52,12 @@ export const Projects = () => {
         description={vowelsDescription}
         onClickFn={() => handleClick('/projects/vowels')}
       />
-      <ProjectCard name="Placeholder" />
+      <ProjectCard
+        name="Pokédex"
+        image={pokedexImage}
+        description={pokedexDescription}
+        onClickFn={() => handleClick('/projects/pokedex')}
+      />
       <ProjectCard name="Placeholder" />
       <ProjectCard name="Placeholder" />
     </div>

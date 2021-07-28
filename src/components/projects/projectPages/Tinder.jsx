@@ -4,7 +4,7 @@ import { TLDR } from '../../tldr/TLDR'
 
 const link = 'https://tinder-plus-plus.vercel.app/'
 
-export const Tinder = ({ className }) => {
+export const Tinder = () => {
   return (
     <div>
       <Back />

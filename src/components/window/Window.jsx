@@ -13,6 +13,7 @@ import { Experience } from '../experience/Experience'
 import { Me } from '../me/Me'
 import './Window.css'
 import { Settings } from '../settings/Settings'
+import { Pokedex } from '../projects/projectPages/Pokedex'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -75,6 +76,9 @@ export const Window = () => {
               </Route>
               <Route path="/projects/vowels">
                 <Vowels />
+              </Route>
+              <Route path="/projects/pokedex">
+                <Pokedex />
               </Route>
               <Route path="/projects">
                 <Projects />
