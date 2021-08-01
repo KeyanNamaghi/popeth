@@ -9,11 +9,12 @@ import { Projects } from '../projects/Projects'
 import { Tinder } from '../projects/projectPages/Tinder'
 import { Popeth } from '../projects/projectPages/Popeth'
 import { Vowels } from '../projects/projectPages/Vowels'
+import { Pokedex } from '../projects/projectPages/Pokedex'
+import { Tamagenome } from '../projects/projectPages/Tamagenome'
 import { Experience } from '../experience/Experience'
 import { Me } from '../me/Me'
 import './Window.css'
 import { Settings } from '../settings/Settings'
-import { Pokedex } from '../projects/projectPages/Pokedex'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
@@ -79,6 +80,9 @@ export const Window = () => {
               </Route>
               <Route path="/projects/pokedex">
                 <Pokedex />
+              </Route>
+              <Route path="/projects/tamagenome">
+                <Tamagenome />
               </Route>
               <Route path="/projects">
                 <Projects />
