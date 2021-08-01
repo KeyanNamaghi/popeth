@@ -64,7 +64,7 @@ export const Projects = () => {
         name="Tamagenome"
         image={tamagenomeImage}
         description={tamagenomeDescription}
-        onClickFn={() => handleClick('/projects/pokedex')}
+        onClickFn={() => handleClick('/projects/tamagenome')}
       />
       <ProjectCard name="Placeholder" />
     </div>
