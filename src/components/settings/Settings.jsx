@@ -50,13 +50,13 @@ export const Settings = () => {
       <hr />
       <h3>Backgrounds</h3>
       <div className="settings__body">
+        <Background background="OldLace" />
         <Background background="honeydew" />
         <Background background="LavenderBlush" />
         <Background background="Lavender" />
         <Background background="Ivory" />
         <Background background="LightCyan" />
         <Background background="LemonChiffon" />
-        <Background background="OldLace" />
         <Background background="GhostWhite" />
       </div>
       <hr />
