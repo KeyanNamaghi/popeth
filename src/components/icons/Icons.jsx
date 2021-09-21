@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux'
 import { useHistory, useLocation } from 'react-router-dom'
 import { SHOW_WINDOW } from '../../actions'
 
-import me from '../../assets/me.svg'
-import meLooking from '../../assets/meLooking.svg'
+import { ReactComponent as Me } from '../../assets/me.svg'
+import { ReactComponent as MeLooking } from '../../assets/meLooking.svg'
 import projects from '../../assets/projects.svg'
 import experience from '../../assets/experience.svg'
 // import contact from '../../assets/contact.svg'
@@ -25,7 +25,7 @@ export const Icons = () => {
   return (
     <div className="icon__container">
       <div className="icon" onClick={() => handleClick('/me')}>
-        <img className="icon__image" src={location.pathname === '/me' ? meLooking : me} alt="" />
+        {location.pathname === '/me' ? <Me className="icon__image" /> : <MeLooking className="icon__image" />}
         <span className="icon__name">Me</span>
       </div>
       <div className="icon" onClick={() => handleClick('/projects')}>

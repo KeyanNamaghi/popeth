@@ -1,3 +1,7 @@
+.settings__container {
+  padding: 20px;
+}
+
 .settings__body {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
@@ -15,4 +19,30 @@
 
 .settings__card--selected {
   box-shadow: 0 8px 16px 0 #0000006b;
+}
+
+.settings__theme {
+  display: flex;
+  height: 100px;
+  margin: 20px 0px;
+}
+
+.settings__theme > div {
+  flex: auto;
+}
+
+.settings__theme-container {
+  padding: 10px 10px 10px 20px;
+}
+
+.settings__theme-container > strong {
+  margin: 10px 10px;
+}
+
+.settings__theme-container:hover {
+  background: var(--color-tertiary-light);
+}
+
+.settings__theme-container:hover > div {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

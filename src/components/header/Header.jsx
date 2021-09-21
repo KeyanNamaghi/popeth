@@ -17,7 +17,8 @@ export const Header = ({ className }) => {
     '/projects/popeth': 'Popeth [This Site]',
     '/projects/vowels': 'Where Are All The Vowels?',
     '/experience': 'Experience',
-    '/contact': 'Contact Me'
+    '/contact': 'Contact Me',
+    '/settings': 'Settings'
   }[pathname]
 
   return (

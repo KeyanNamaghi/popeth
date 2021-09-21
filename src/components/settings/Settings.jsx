@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { SET_BACKGROUND } from '../../actions'
 import { getBackground } from '../../selectors/desktop'
+import { Theme, defaultTheme, argosTheme } from './Theme'
 import './Settings.css'
 
 // TODO: refactor this into two separate things, I blame the vaccine side effects for this mess
@@ -42,7 +43,11 @@ const Background = ({ background, grid }) => {
 
 export const Settings = () => {
   return (
-    <div>
+    <div className="settings__container">
+      <h3>Themes</h3>
+      <Theme theme={defaultTheme} name="Mai" />
+      <Theme theme={argosTheme} name="Argos" />
+      <hr />
       <h3>Backgrounds</h3>
       <div className="settings__body">
         <Background background="honeydew" />
@@ -54,6 +59,7 @@ export const Settings = () => {
         <Background background="OldLace" />
         <Background background="GhostWhite" />
       </div>
+      <hr />
       <h3>Background Grid</h3>
       <div className="settings__body">
         <Background grid={'0px 0px'} />

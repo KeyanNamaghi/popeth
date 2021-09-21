@@ -35,8 +35,9 @@
   display: flex;
   cursor: pointer;
   height: 30px;
-  background: PapayaWhip;
-  border-radius: 10px 10px 0px 0px;
+  background: var(--color-primary);
+  color: var(--color-text-secondary);
+  border-radius: 8px 8px 0px 0px;
 }
 
 .window__body {

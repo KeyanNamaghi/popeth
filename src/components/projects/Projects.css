@@ -15,13 +15,14 @@
 
 .projects__card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background: #defde0;
+  background: var(--color-tertiary-light);
 }
 
 .projects__card-image {
   width: 300px;
   height: 300px;
   border-radius: 5px 5px 0px 0px;
+  background: #f4f7fa;
 }
 
 .projects__card-details {
@@ -55,13 +56,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: lightcyan;
+  background: var(--color-secondary-light);
 }
 
 .vowels__letter--vowel {
-  background: lightskyblue;
+  background: var(--color-secondary);
 }
 
 .vowels__letter--y {
-  background: lightblue;
+  background: var(--color-secondary);
 }
