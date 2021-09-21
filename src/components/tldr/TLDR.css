@@ -8,6 +8,7 @@
 }
 
 .tldr__image {
-  width: 50%;
+  height: 300px;
+  min-height: 300px;
   align-self: center;
 }
