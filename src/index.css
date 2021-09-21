@@ -10,9 +10,9 @@ code {
 }
 
 :root {
-  --color-primary: #a9b072;
-  --color-primary-dark: #999657;
-  --color-primary-light: #cfcb8e;
+  --color-primary: #cfcb8e;
+  --color-primary-dark: #a9b072;
+  --color-primary-light: #e3dbb4;
   --color-secondary: #fcb95f;
   --color-secondary-dark: #fc9d55;
   --color-secondary-light: #eee0d2;

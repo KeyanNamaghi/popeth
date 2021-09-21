@@ -38,9 +38,9 @@ export const Theme = ({ theme, name }) => {
 }
 
 export const defaultTheme = {
-  colorPrimary: '#a9b072',
-  colorPrimaryDark: '#999657',
-  colorPrimaryLight: '#cfcb8e',
+  colorPrimary: '#cfcb8e',
+  colorPrimaryDark: '#a9b072',
+  colorPrimaryLight: '#E3DBB4',
   colorSecondary: '#fcb95f',
   colorSecondaryDark: '#fc9d55',
   colorSecondaryLight: '#faca83',

@@ -25,7 +25,7 @@ export const Icons = () => {
   return (
     <div className="icon__container">
       <div className="icon" onClick={() => handleClick('/me')}>
-        {location.pathname === '/me' ? <Me className="icon__image" /> : <MeLooking className="icon__image" />}
+        {location.pathname === '/me' ? <MeLooking className="icon__image" /> : <Me className="icon__image" />}
         <span className="icon__name">Me</span>
       </div>
       <div className="icon" onClick={() => handleClick('/projects')}>
