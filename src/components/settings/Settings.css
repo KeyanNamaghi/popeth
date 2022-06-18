@@ -40,7 +40,7 @@
 }
 
 .settings__theme-container:hover {
-  background: var(--color-tertiary-light);
+  background: var(--color-secondary-light);
 }
 
 .settings__theme-container:hover > div {

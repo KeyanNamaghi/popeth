@@ -15,7 +15,7 @@
 
 .projects__card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background: var(--color-tertiary-light);
+  background: var(--color-secondary-light);
 }
 
 .projects__card-image {
@@ -64,9 +64,11 @@
 }
 
 .vowels__letter--vowel {
-  background: var(--color-secondary);
+  background: var(--color-secondary-dark);
+  color: white;
 }
 
 .vowels__letter--y {
   background: var(--color-secondary);
+  color: white;
 }
