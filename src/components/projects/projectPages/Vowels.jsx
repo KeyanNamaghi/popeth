@@ -18,7 +18,7 @@ const Letters = ({ language }) => {
 
 export const Vowels = () => {
   return (
-    <>
+    <div className="projects__page-body">
       <Back />
       <TLDR link={link} image={vowelsImage} />
       <div className="vowels__body">
@@ -46,6 +46,6 @@ export const Vowels = () => {
           show where the vowels are in words in both english and welsh.
         </p>
       </div>
-    </>
+    </div>
   )
 }

@@ -58,6 +58,7 @@ export const Settings = () => {
         <Background background="LightCyan" />
         <Background background="LemonChiffon" />
         <Background background="GhostWhite" />
+        <Background background="WhiteSmoke" />
       </div>
       <hr />
       <h3>Background Grid</h3>

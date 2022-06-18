@@ -6,7 +6,7 @@ const link = 'https://tinder-plus-plus.vercel.app/'
 
 export const Tinder = () => {
   return (
-    <div>
+    <div className="projects__page-body">
       <Back />
       <TLDR link={link} />
       <h2>How can we improve on Tinder?</h2>

@@ -39,6 +39,10 @@
   font-size: small;
 }
 
+.projects__page-body {
+  padding: 50px;
+}
+
 .vowels__body {
   padding: 10px;
 }

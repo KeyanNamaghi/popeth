@@ -6,7 +6,7 @@ const link = 'https://pokedex-keyannamaghi.vercel.app'
 
 export const Pokedex = () => {
   return (
-    <div>
+    <div className="projects__page-body">
       <Back />
       <TLDR link={link} />
       <h2>Who doesn't love Pokémon?</h2>
