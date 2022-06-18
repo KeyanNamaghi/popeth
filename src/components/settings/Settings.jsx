@@ -31,7 +31,7 @@ const Background = ({ background, grid }) => {
         dispatch(
           SET_BACKGROUND({
             backgroundColor: background || activeBackground.backgroundColor,
-            backgroundSize: grid || '0px 0px',
+            backgroundSize: grid || activeBackground.backgroundSize || '0px 0px',
             backgroundImage:
               'linear-gradient(90deg,#fff 2px,transparent 0),linear-gradient(180deg,#fff 2px,transparent 0)'
           })

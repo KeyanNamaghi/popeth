@@ -11,9 +11,9 @@ import { Popeth } from '../projects/projectPages/Popeth'
 import { Vowels } from '../projects/projectPages/Vowels'
 import { Pokedex } from '../projects/projectPages/Pokedex'
 import { Experience } from '../experience/Experience'
+import { Settings } from '../settings/Settings'
 import { Me } from '../me/Me'
 import './Window.css'
-import { Settings } from '../settings/Settings'
 
 export const Window = () => {
   const fullscreen = useSelector(getFullscreenState)
